@@ -1,0 +1,79 @@
+body {
+  color: #fff;
+  font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+}
+
+.container:before,
+.container:after {
+  content: "";
+  display: table;
+
+}
+.container:after {
+  clear: both;
+}
+
+.container {
+  background: grey;
+  width: 538px;
+  zoom: 1;
+}
+
+section, aside {
+  margin: 10px;
+  border-radius: 6px;
+  text-align: center;
+  padding: 20px 0;
+
+}
+
+section { 
+  float: left;
+  background: green;
+  width: 340px;
+}
+
+aside { 
+  float: right;
+  background: green;
+  width: 158px;
+}
+
+
+/*========================================
+  Lesson 07 Transform 
+========================================*/
+.original,
+.box {
+  border-radius: 6px;
+}
+
+.original {
+  background: grey;
+  border: 1px dashed #cecfd5;
+  float: left;
+  margin: 12px 15px;
+}
+
+.box {
+  background: green;
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 12px 15px;
+  transform: rotate(-45deg);
+  transition: transform 0.5s ease-out, background 0.5s ease-out;
+}
+
+.box:hover {
+  background: red;
+  transform: rotate(0deg);
+}
+
+.box:active {
+  background: blue;
+  transform: rotate(45deg);
+}
+
+
